@@ -1,2 +1,2 @@
 # buyMetaTrader5
-Demonstração simples de como executar uma ordem de compra no MetaTrader5, já logado em uma conta (demo ou real), via Python.
+Simple demonstration on how to send a buy order through MetaTrader5, already logged in an account (demo or real) with Python.
