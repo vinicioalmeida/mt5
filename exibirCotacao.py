@@ -8,6 +8,6 @@ while(True):
     ativo = mt5.symbol_info_tick('WING24')
     sys.stdout.write('\r' + str(ativo.last)) # \r apaga a cotação anterior
     sys.stdout.flush() # flush limpa a memória
-    time.sleep(0.5)
+    time.sleep(0.8)
 
     
