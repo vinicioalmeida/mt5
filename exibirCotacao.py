@@ -1,4 +1,4 @@
-import sys
+import sys  
 import MetaTrader5 as mt5
 import time
 
