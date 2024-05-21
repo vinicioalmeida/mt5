@@ -1,17 +1,14 @@
 import MetaTrader5 as mt5
-print("MetaTrader5 package author: ", mt5.__author__)
-print("MetaTrader5 package version: ", mt5.__version__)
 
-if not mt5.initialize():
-    print("initialize() failed")
-    mt5.shutdown()
+mt5.initialize()
  
 print(mt5.terminal_info())
 print(mt5.version())
 
-symbol="PETR4"
+symbol="INDM24"
 mt5.symbol_select(symbol,True)
-lot = 100
+
+lot = 10
 price = mt5.symbol_info_tick(symbol).ask
 deviation = 2
 request = {
@@ -20,8 +17,6 @@ request = {
     "volume": float(lot),
     "type": mt5.ORDER_TYPE_BUY,
     "price": price,
-    "sl": price - 1.00,
-    "tp": price + 1.00,
     "deviation": deviation,
     "magic": 123,
     "comment": "compra",
