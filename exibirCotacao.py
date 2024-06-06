@@ -2,6 +2,8 @@ import sys
 import MetaTrader5 as mt5
 import time
 
+# https://www.mql5.com/en/docs/python_metatrader5
+
 mt5.initialize()
 mt5.symbol_select('INDM24',True)
 
